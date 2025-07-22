@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": "aca06a8a-68cb-405a-9da6-f3656aa2d6ce",
+    "title": "The Song Celestial",
+    "author": "Unknown Author",
+    "status": "read",
+    "rating": 4,
+    "cover": "http://books.google.com/books/content?id=9B41AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "id": "550ace58-da4c-4e37-b7bf-cec96d280ff9",
+    "title": "Description of a new genus of plants",
+    "author": "Kellogg",
+    "status": "unread",
+    "rating": 5,
+    "cover": "http://books.google.com/books/content?id=mps5AAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  }
+]

@@ -3,14 +3,15 @@ import { SlidersHorizontal } from "lucide-react";
 import AddBookModal from "./AddBookModal";
 import FilterBtns from "./FilterBtns";
 
-const BooksControls = forwardRef(function BooksControls({handleFilterAll, handleFilterRead, handleFilterUnread}, ref) {
+const BooksControls = forwardRef(function BooksControls({handleFilterAll, handleFilterRead, handleFilterUnread , setRender}, ref) {
   const [isOpen, setIsOpen] = useState(false);
 
   function handleClickAddBook() {
     setIsOpen(true);
   }
-
-
+   useEffect(()=>{
+      setRender(true);
+   },[isOpen])
   return (
     <>
       {isOpen && <AddBookModal onCloseBtn={() => setIsOpen(false)} setIsOpen={setIsOpen} />}
