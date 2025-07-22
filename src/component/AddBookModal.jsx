@@ -56,7 +56,7 @@ function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
                 setConfirmMsg(true);
                 setTimeout(()=>{
                   setConfirmMsg(false);
-                },1700)
+                },17000)
             }}>
               <BookNameInput setInputData={setInputData} setIsEmptyBook={setIsEmptyBook} />
               

@@ -61,5 +61,21 @@
     "status": "unread",
     "rating": 4,
     "cover": "http://books.google.com/books/content?id=xc-5EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "id": "83e200ec-1d91-474e-bc35-339379c0117b",
+    "title": "My Journey in This World",
+    "author": "Zed Nzuzi Nsakala",
+    "status": "unread",
+    "rating": 3,
+    "cover": "http://books.google.com/books/content?id=Q4ojEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "id": "ff49df22-a47d-41e5-8c64-9113922f9ace",
+    "title": "A Journey to the Centre of the Earth (Esprios Classics)",
+    "author": "Jules Verne",
+    "status": "unread",
+    "rating": 3,
+    "cover": "http://books.google.com/books/content?id=AFDaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
   }
 ]
