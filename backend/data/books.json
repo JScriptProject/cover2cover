@@ -1,18 +1,10 @@
 [
   {
-    "id": "550ace58-da4c-4e37-b7bf-cec96d280ff9",
-    "title": "Description of a new genus of plants",
-    "author": "Kellogg",
-    "status": "unread",
-    "rating": 5,
-    "cover": "http://books.google.com/books/content?id=mps5AAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-  },
-  {
     "id": "fcef5829-b03c-4d4a-97bb-46e26a31bc84",
     "title": "The Hindu Religious Tradition",
     "author": "Thomas J. Hopkins",
     "status": "unread",
-    "rating": 3,
+    "rating": 2,
     "cover": "http://books.google.com/books/content?id=ZvBGEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
   },
   {
@@ -46,5 +38,28 @@
     "status": "unread",
     "rating": 0,
     "cover": "http://books.google.com/books/content?id=8GwzAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "id": "dc60421c-9608-4d95-b5ed-ca741f636ec4",
+    "title": "I Like My Name",
+    "author": "Unknown Author",
+    "status": "unread",
+    "rating": 3,
+    "cover": "http://books.google.com/books/content?id=tCZoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "id": "52f76d40-0601-4782-873c-5f0bb02c7fba",
+    "title": "Larions lov",
+    "author": "Peter Freuchen",
+    "status": "unread",
+    "rating": 3
+  },
+  {
+    "id": "3836125f-1e37-430a-b739-055ed7f7b52d",
+    "title": "Rahul Gandhi: The Untold Story",
+    "author": "Swatantra Bahadur",
+    "status": "unread",
+    "rating": 4,
+    "cover": "http://books.google.com/books/content?id=xc-5EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
   }
 ]

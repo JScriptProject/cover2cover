@@ -58,7 +58,7 @@ h1 span::after{
 
 .book-controls-section{
   background-color: #00000018;
-  @apply mt-5 w-full py-3 px-8 rounded-2xl;
+  @apply mt-5 w-full py-1 sm:py-3 px-2 sm:px-8 rounded-2xl;
 }
 
 .book-control-wrapper{
@@ -75,7 +75,7 @@ h1 span::after{
 
 .add-books{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  @apply text-[#d7ceff] text-[1rem] bg-gray-800 px-6 py-2 rounded-xl hover:bg-gray-700 transition-all duration-300 cursor-pointer;
+  @apply text-[#d7ceff] text-[1rem] bg-gray-800 px-4 sm:px-6 py-2 rounded-xl hover:bg-gray-700 transition-all duration-300 cursor-pointer;
 }
 
 .filter-buttons{
@@ -347,3 +347,22 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
+#global-modal{
+    position:relative;
+    margin-inline:auto;
+    display:flex;
+    width:100%;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+
+#global-modal p{
+  animation: animUpDown 0.4s linear forward;
+  @apply text-white absolute mt-5 text-xl bg-green-600 px-4 rounded-sm ;
+}
+
+@keyframe animUpDown{
+  0%{ transform:translateY(-40px); opacity:0.2;}
+  100%{transform:translateY(0); opacity:1;}
+}

@@ -38,6 +38,8 @@ function BookViews({ booksData, setRender, error }) {
   }
 
   return (
+    <>
+    <div id="global-modal"></div>
     <div className="books-view-section">
       {(booksData.books?.length === 0 ||
         booksData.books?.length === undefined) && (
@@ -133,6 +135,7 @@ function BookViews({ booksData, setRender, error }) {
         })}
       </ul>
     </div>
+      </>
   );
 }
 

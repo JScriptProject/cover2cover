@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import createPortal from 'react-dom'
 import { X } from "lucide-react";
 import ReactStars from "react-stars";
 import booklogo from '../assets/book.png';
@@ -14,6 +15,7 @@ function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
         cover: ""
     });
     const [isEmptyBook, setIsEmptyBook] = useState(false);
+    const [confirmMsg, setConfirmMsg] = useState(false);
 
     function handleInputChange(e){
         setInputData({...inputData, [e.target.name]: e.target.value});
@@ -26,6 +28,8 @@ function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
     
   return (
     <>
+    {confirmMsg && createPortal(<p>Book Added Succsefully</p>, document.getElementById("global-modal"))}
+
     <div className="add-book-main">
       {isEmptyBook && <p className="emptybookName">Please Enter the book name..</p>}
         <div className="addBook-dialog">
@@ -49,6 +53,10 @@ function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
                 console.log(bookDataResponse);
                 setIsOpen(false);
                 setRender((prev)=> !prev);
+                setConfirmMsg(true);
+                setTimeout(()=>{
+                  setConfirmMsg(false);
+                },1700)
             }}>
               <BookNameInput setInputData={setInputData} setIsEmptyBook={setIsEmptyBook} />
               
