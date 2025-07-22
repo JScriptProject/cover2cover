@@ -1,13 +1,5 @@
 [
   {
-    "id": "aca06a8a-68cb-405a-9da6-f3656aa2d6ce",
-    "title": "The Song Celestial",
-    "author": "Unknown Author",
-    "status": "read",
-    "rating": 4,
-    "cover": "http://books.google.com/books/content?id=9B41AQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-  },
-  {
     "id": "550ace58-da4c-4e37-b7bf-cec96d280ff9",
     "title": "Description of a new genus of plants",
     "author": "Kellogg",
@@ -24,10 +16,18 @@
     "cover": "http://books.google.com/books/content?id=ZvBGEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
   },
   {
-    "id": "74575b64-41a6-4675-ac7d-189f20cebd1f",
-    "title": "Human Resource Manag.: Ethics & Empl.",
-    "author": "Ashly Pinnington",
+    "id": "1dc198f2-7a51-49f7-a3f5-d33fd5df5d36",
+    "title": "DO EPIC SHIT.",
+    "author": "ANKUR. WARIKOO",
     "status": "unread",
-    "rating": 1
+    "rating": 3,
+    "cover": "http://books.google.com/books/content?id=BH5BzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "id": "6f06e373-dde4-4916-b25f-3f0bceb98c82",
+    "title": "A Tree Is Nice",
+    "author": "Janice May Udry",
+    "status": "unread",
+    "rating": 5
   }
 ]

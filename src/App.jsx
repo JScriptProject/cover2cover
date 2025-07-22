@@ -71,6 +71,7 @@ function App() {
           handleFilterUnread={handleFilterUnread}
           ref = {activeFilter}
           setRender ={setRender}
+          render={render}
         />
         <BookViews
           booksData={booksData}
