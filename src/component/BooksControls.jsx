@@ -1,4 +1,4 @@
-import React, { useState, forwardRef } from "react";
+import React, { useState, forwardRef, useEffect } from "react";
 import { SlidersHorizontal } from "lucide-react";
 import AddBookModal from "./AddBookModal";
 import FilterBtns from "./FilterBtns";

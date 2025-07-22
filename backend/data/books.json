@@ -14,5 +14,20 @@
     "status": "unread",
     "rating": 5,
     "cover": "http://books.google.com/books/content?id=mps5AAAAcAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "id": "fcef5829-b03c-4d4a-97bb-46e26a31bc84",
+    "title": "The Hindu Religious Tradition",
+    "author": "Thomas J. Hopkins",
+    "status": "unread",
+    "rating": 3,
+    "cover": "http://books.google.com/books/content?id=ZvBGEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "id": "74575b64-41a6-4675-ac7d-189f20cebd1f",
+    "title": "Human Resource Manag.: Ethics & Empl.",
+    "author": "Ashly Pinnington",
+    "status": "unread",
+    "rating": 1
   }
 ]
