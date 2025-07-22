@@ -1,0 +1,346 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #5e5368 74%);
+   font-family: "Genos", sans-serif;
+  font-optical-sizing: auto;
+  @apply w-full h-full min-h-screen;
+}
+
+.container {
+  /* background-color: #e288f9; */
+  background-image:
+    linear-gradient(315deg, #e288f946 0%, #ffc9885e 74%),
+    url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  background-repeat: repeat;
+  background-size: cover, auto;
+
+  @apply w-full p-6 max-w-[700px] mx-auto sm:my-10 sm:rounded-4xl min-h-fit;
+}
+
+/* Header */
+
+header {
+  @apply flex flex-col items-center justify-center py-4;
+}
+
+.logo-img {
+  filter: drop-shadow(2px 2px 12px #ffffff80);
+  @apply w-[4rem] rotate-7;
+}
+
+ h1,h3 {
+ font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+    background: linear-gradient(90deg, #d7ceff, #9dffea); /* You can adjust second color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  @apply text-4xl uppercase font-bold relative;
+}
+
+h1 span::after{
+  content: "2";
+  font-size: 4rem;
+ background: linear-gradient(180deg, #2f07e2, #017259, #2f07e2); /* You can adjust second color */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1000;
+    font-family: "DynaPuff", system-ui;
+}
+
+/* bookscontainer */
+
+.book-controls-section{
+  background-color: #00000018;
+  @apply mt-5 w-full py-3 px-8 rounded-2xl;
+}
+
+.book-control-wrapper{
+  @apply flex w-full flex-row items-center justify-between ;
+}
+
+.filter-buttons{
+  @apply flex flex-row gap-3 justify-end items-center;
+}
+
+.sliderHorizontal{
+  @apply w-[1.2rem] mr-3; 
+}
+
+.add-books{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  @apply text-[#d7ceff] text-[1rem] bg-gray-800 px-6 py-2 rounded-xl hover:bg-gray-700 transition-all duration-300 cursor-pointer;
+}
+
+.filter-buttons{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  @apply text-[0.9rem] font-semibold cursor-pointer text-gray-800 hover:text-gray-300 transition-all duration-300 ;
+}
+
+.filter-buttons.selected{
+  @apply text-gray-300;
+}
+
+.books-view-section{
+  background-color: #00000018;
+  /* background-color: rgba(157, 255, 234, 0.04); */
+  @apply mt-5 rounded-xl w-full h-full p-6;
+}
+
+.book-section{
+  animation: modalAnim 0.3s ease-out forwards;
+  box-shadow: 0px 0px 20px 2px #0000001e;
+  background-color:#9dffea17; 
+  @apply rounded-xl mb-5 relative transition-all duration-300 ;
+}
+
+.book-section:hover{
+  box-shadow: 0px 0px 20px 2px hsla(0, 0%, 0%, 0.377);
+}
+
+
+ .about-book{
+  @apply grid grid-cols-1 sm:grid-cols-[1fr_9rem] py-3 px-4 relative;
+}
+
+.book-info{
+  position: relative;
+}
+
+.addonControlBtns{
+  @apply absolute bottom-2 right-4 sm:top-2;
+}
+.addonControlBtns .addonBtn{
+  padding-left: 10px
+}
+
+.addonBtnIcon{
+  width: 15px;
+  cursor: pointer;
+  color: #3d3d3d00;
+  transition: all 0.3s linear;
+}
+.addonBtnIcon-save{
+  color: #000000;
+}
+.book-section:hover .addonBtnIcon{
+  color: #3d3d3d;
+}
+
+.addon-edit .addonBtnIcon:hover{
+  color: #000000;
+}
+.addon-delete .addonBtnIcon:hover{
+  color: rgb(128, 9, 9);
+}
+
+.book-info h2{
+@apply text-gray-800 font-semibold text-[1.2rem] pb-1;
+}
+
+.book-info h2 span{
+@apply text-gray-900 text-[1.3rem]; 
+}
+
+.book-info h5 ,.book-info h4{
+ @apply text-gray-800 font-semibold text-[1rem] pb-1;
+}
+
+.book-info h5 span, .book-info h4 span{
+ @apply text-gray-900 text-[1.1rem]; 
+}
+
+
+.book-Status{
+  @apply flex flex-row items-center justify-start pb-1;
+}
+
+.book-Status .readStatus{
+  @apply w-[4rem] text-sm font-semibold text-[#eef0ef] ;
+}
+.stars{
+  @apply  flex flex-row items-center justify-start gap-1;
+}
+.stars .star{
+  @apply w-[1rem];
+}
+
+.book-img{
+  width: 6rem;
+  padding:0;
+}
+
+.book-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0px 15px 10px #00000080);
+}
+
+
+.add-book-main{
+ position: fixed;
+ background-color: #000000b4;
+ width: 100vw;
+ height: 100vh;
+ top:0;
+ left:0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 1000;
+}
+
+.addBook-dialog{
+  position: relative;
+  z-index: 1001;
+ 
+ box-shadow:0px 0px 50px 2px #ffffff2f;
+ animation: modalAnim 0.3s ease-out forwards;
+  background-image: linear-gradient(315deg, #2c2626 0%, #5e5368 74%);
+  @apply  mx-auto my-auto rounded-2xl px-5 py-7 max-w-[400px] min-w-[300px];
+}
+
+@keyframes modalAnim {
+  0%{opacity:0.4;transform:translateY(30px);}
+  100%{opacity:1;transform:translateY(0px);}
+}
+.addBook-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6); /* black with opacity */
+  backdrop-filter: blur(2px) ;     /* optional blur */
+}
+
+
+.addBook-dialog .modal-header{
+  @apply w-full flex flex-col justify-center items-center; 
+}
+
+.modal-header .logo-img {
+  filter: drop-shadow(2px 2px 12px #ffffff80);
+  @apply w-[3rem] mb-2 rotate-7;
+}
+
+.addBook-dialog .modal-header h3{
+   @apply text-2xl mb-6;
+}
+
+.addBook-dialog .form123 .input-block{
+  @apply w-full mb-3 relative;
+}
+
+.suggestion-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #d7ceff;
+  border: 1px solid #ccc;
+  width: 100%;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin-top: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestion-box li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion-box li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.input-block label{
+  
+  @apply text-[1rem] relative block pb-1 text-amber-100 font-light ;
+}
+
+.addBook-dialog .form123 .input-block input{
+  @apply bg-gray-200 text-gray-800 outline-none font-semibold rounded-sm px-2 py-1 text-[1rem] w-full;
+}
+
+/* radio input block */
+.input-block-radio{
+  @apply flex flex-row gap-5 items-center justify-start;
+}
+
+.input-block-radio .radio-group{
+  @apply flex flex-row gap-1 ;
+}
+
+.closeBtn-dialog{
+  @apply  absolute top-4 right-4 text-gray-500 cursor-pointer hover:text-gray-200 transition-all duration-300;
+}
+
+.submit-addBookBtn{
+  @apply cursor-pointer block mx-auto bg-gray-700 hover:bg-gray-600  ;
+}
+
+/* book save message */
+.book-save-msg{
+  left:50%;
+  transform: translateX(-50%);
+  @apply  absolute top-8 text-4xl text-gray-900 font-bold ;
+}
+
+/* modal  */
+
+#delete-dialog{
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+   box-shadow:0px 0px 50px 2px #ffffff4f;
+  @apply py-6 px-10 rounded-xl bg-amber-100;
+}
+
+#delete-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6); /* black with opacity */
+  backdrop-filter: blur(2px) ;     /* optional blur */
+}
+
+#delete-dialog h2{
+   font-family: "Oswald", sans-serif;
+  @apply text-4xl font-normal pb-3 text-start;
+}
+
+#delete-dialog p{
+  @apply text-xl pb-7 text-start; 
+}
+
+#delete-dialog p span{
+  @apply font-bold italic;
+}
+
+.deleteConfirmationBtn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.book-delete-Btn{
+  
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  @apply text-[#d7ceff] text-[1rem] bg-gray-800 px-6 py-2 rounded-xl hover:bg-gray-700 transition-all duration-300 cursor-pointer;
+}
+
+.delete-btn{
+  @apply bg-red-600 text-white hover:bg-red-700;
+}
+
+/* book Edit CSS */
+.editSelect{
+  @apply outline-none border border-[#3d3d3d] cursor-pointer transition-all duration-300 rounded-sm hover:border-gray-300;
+}
+
+
