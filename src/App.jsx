@@ -27,7 +27,7 @@ function App() {
         setInitialBooksData(data);
       } catch (e) {
         setError({
-          msg: "Error loading books from backend, Reastart Backend..",
+          msg: "Error loading books from backend, Reastart Backend...",
         });
       }
     }, 500);

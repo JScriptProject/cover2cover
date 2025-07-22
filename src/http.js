@@ -61,7 +61,7 @@ export async function deleteBook(id) {
       contentType: "application/json",
     });
     if (!response.ok) {
-      throw new Error("Failed to delete book");
+      throw new Error("Failed to delete book...");
     }
     const bookDataResponse = await response.json();
     return bookDataResponse;

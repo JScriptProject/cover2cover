@@ -4,7 +4,7 @@ import { v4 as uuid } from 'uuid';
 
 const app = express();
 
-// Serve static files (e.g., images)
+// Serve static files (e.g., images) and other parts
 app.use(express.static('images'));
 app.use(express.json()); // Parse JSON bodies
 
