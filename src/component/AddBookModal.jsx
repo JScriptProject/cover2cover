@@ -26,6 +26,7 @@ function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
         setInputData({...inputData, rating: newRating});
     }
     
+    console.log(confirmMsg);
   return (
     <>
     {confirmMsg && createPortal(<p>Book Added Succsefully</p>, document.getElementById("global-modal"))}
