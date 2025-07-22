@@ -40,7 +40,7 @@ function BookViews({ booksData, setRender, error }) {
     setIsEditDone(true);
     setTimeout(() => {
       setIsEditDone(false);
-    }, 3000);
+    }, 1500);
   }
 
   return (

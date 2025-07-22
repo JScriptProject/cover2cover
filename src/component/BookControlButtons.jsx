@@ -30,7 +30,7 @@ async function onClickDelete(){
   setIsDeleteDone(true);
   setTimeout(() => {
     setIsDeleteDone(false);
-  }, 3000);
+  },1500);
 }
 
 function onClickCancel(){

@@ -1,42 +1,11 @@
 [
   {
-    "id": "85323054-b9f8-450e-ba93-0a5c1bfffde1",
-    "title": "అమ్మాయి తో స్నేహం",
-    "author": "Revanth Kothapalli",
-    "status": "unread",
-    "rating": 3,
-    "cover": "http://books.google.com/books/content?id=99BEDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-  },
-  {
-    "id": "9610b81c-dd7e-46f2-84fd-f05800d6e629",
-    "title": "The Art of Money Getting, Or Golden Rules for Making Mone",
-    "author": "P. T. Barnum",
-    "status": "read",
-    "rating": 2,
-    "cover": "http://books.google.com/books/content?id=iy9rtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
-  },
-  {
-    "id": "59f64e54-d33d-42c1-b779-1b36c9ed7d6d",
-    "title": "FDF Bulletin",
-    "author": "Unknown Author",
-    "status": "unread",
-    "rating": 0,
-    "cover": "http://books.google.com/books/content?id=8GwzAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
-  },
-  {
     "id": "dc60421c-9608-4d95-b5ed-ca741f636ec4",
     "title": "I Like My Name",
     "author": "Unknown Author",
     "status": "unread",
     "rating": 3,
     "cover": "http://books.google.com/books/content?id=tCZoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-  },
-  {
-    "id": "52f76d40-0601-4782-873c-5f0bb02c7fba",
-    "title": "Larions lov",
-    "author": "Peter Freuchen",
-    "status": "unread",
-    "rating": 3
   },
   {
     "id": "3836125f-1e37-430a-b739-055ed7f7b52d",
