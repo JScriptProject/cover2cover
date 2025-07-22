@@ -5,7 +5,7 @@ import booklogo from '../assets/book.png';
 import { sendRequest } from '../http';
 import BookNameInput from './BookNameInput';
 
-function AddBookModal({onCloseBtn, setIsOpen}) {
+function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
     const [inputData, setInputData] = useState({
         title: "",
         author: "",
@@ -42,6 +42,7 @@ function AddBookModal({onCloseBtn, setIsOpen}) {
                 const bookDataResponse = await sendRequest(inputData);
                 console.log(bookDataResponse);
                 setIsOpen(false);
+                setRender((prev)=> !prev);
             }}>
               <BookNameInput setInputData={setInputData} />
               

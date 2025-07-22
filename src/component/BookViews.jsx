@@ -34,7 +34,7 @@ function BookViews({ booksData, setRender, error }) {
     const updateResponse = await updateBook(editingBook.id, editingBook);
     console.log("after update response");
     console.log(updateResponse);
-    setRender(true);
+    setRender((prev)=> !prev);
   }
 
   return (

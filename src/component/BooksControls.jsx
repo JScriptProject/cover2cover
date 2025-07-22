@@ -9,15 +9,11 @@ const BooksControls = forwardRef(function BooksControls({handleFilterAll, handle
   function handleClickAddBook() {
     setIsOpen(true);
   }
-   useEffect(()=>{
-    console.log("inside useEffect");
-      setRender(true);
-   },[isOpen])
-console.log("render",render);
-console.log("isOpen",isOpen);
+   
+
   return (
     <>
-      {isOpen && <AddBookModal onCloseBtn={() => setIsOpen(false)} setIsOpen={setIsOpen} />}
+      {isOpen && <AddBookModal onCloseBtn={() => setIsOpen(false)} setIsOpen={setIsOpen}  setRender={setRender}/>}
       <div className="book-controls-section">
         <div className="book-control-wrapper">
           <button
