@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactStars from "react-stars";
-
+import { createPortal } from "react-dom";
 import BookControlButtons from "./BookControlButtons";
 import { Star } from "lucide-react";
 import bookFallbackImg from "../assets/book-fallback.png";
@@ -9,6 +9,8 @@ import { updateBook } from "../http";
 function BookViews({ booksData, setRender, error }) {
   const [isEditing, setIsEditing] = useState(false);
   const [editingBook, setEditingBook] = useState({});
+  const [isEditDone, setIsEditDone] = useState(false);
+  const [isDeleteDone, setIsDeleteDone] = useState(false);
 
   //handle book edit
   function handleEdit(book) {
@@ -35,10 +37,16 @@ function BookViews({ booksData, setRender, error }) {
     console.log("after update response");
     console.log(updateResponse);
     setRender((prev)=> !prev);
+    setIsEditDone(true);
+    setTimeout(() => {
+      setIsEditDone(false);
+    }, 3000);
   }
 
   return (
     <>
+    {isEditDone && createPortal(<p>Book Updated Succsefully</p>, document.getElementById("global-modal"))}
+    {isDeleteDone && createPortal(<p>Book Deleted Succsefully</p>, document.getElementById("global-modal"))}
     <div id="global-modal"></div>
     <div className="books-view-section">
       {(booksData.books?.length === 0 ||
@@ -59,6 +67,7 @@ function BookViews({ booksData, setRender, error }) {
                     editingBook={editingBook}
                     handleSave={handleSave}
                     setRender={setRender}
+                    setIsDeleteDone={setIsDeleteDone}
                   />
 
                   <h2 className="w-[90%]">

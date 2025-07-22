@@ -1,19 +1,21 @@
 import React, { useState, forwardRef, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { SlidersHorizontal } from "lucide-react";
 import AddBookModal from "./AddBookModal";
 import FilterBtns from "./FilterBtns";
 
 const BooksControls = forwardRef(function BooksControls({handleFilterAll, handleFilterRead, handleFilterUnread , setRender, render}, ref) {
   const [isOpen, setIsOpen] = useState(false);
+  const [confirmMsg, setConfirmMsg] = useState(false);
 
   function handleClickAddBook() {
     setIsOpen(true);
   }
    
-
   return (
     <>
-      {isOpen && <AddBookModal onCloseBtn={() => setIsOpen(false)} setIsOpen={setIsOpen}  setRender={setRender}/>}
+    {confirmMsg && createPortal(<p>Book Added Succsefully</p>, document.getElementById("global-modal"))}
+      {isOpen && <AddBookModal onCloseBtn={() => setIsOpen(false)} setIsOpen={setIsOpen}  setRender={setRender} setConfirmMsg={setConfirmMsg}/>}
       <div className="book-controls-section">
         <div className="book-control-wrapper">
           <button

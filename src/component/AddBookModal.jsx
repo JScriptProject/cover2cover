@@ -6,7 +6,7 @@ import booklogo from '../assets/book.png';
 import { sendRequest } from '../http';
 import BookNameInput from './BookNameInput';
 
-function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
+function AddBookModal({onCloseBtn, setIsOpen, setRender, setConfirmMsg}) {
     const [inputData, setInputData] = useState({
         title: "",
         author: "",
@@ -15,7 +15,7 @@ function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
         cover: ""
     });
     const [isEmptyBook, setIsEmptyBook] = useState(false);
-    const [confirmMsg, setConfirmMsg] = useState(false);
+   
 
     function handleInputChange(e){
         setInputData({...inputData, [e.target.name]: e.target.value});
@@ -26,10 +26,10 @@ function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
         setInputData({...inputData, rating: newRating});
     }
     
-    console.log(confirmMsg);
+   
   return (
     <>
-    {confirmMsg && createPortal(<p>Book Added Succsefully</p>, document.getElementById("global-modal"))}
+    
 
     <div className="add-book-main">
       {isEmptyBook && <p className="emptybookName">Please Enter the book name..</p>}

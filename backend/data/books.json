@@ -1,21 +1,5 @@
 [
   {
-    "id": "fcef5829-b03c-4d4a-97bb-46e26a31bc84",
-    "title": "The Hindu Religious Tradition",
-    "author": "Thomas J. Hopkins",
-    "status": "unread",
-    "rating": 2,
-    "cover": "http://books.google.com/books/content?id=ZvBGEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-  },
-  {
-    "id": "1dc198f2-7a51-49f7-a3f5-d33fd5df5d36",
-    "title": "DO EPIC SHIT.",
-    "author": "ANKUR. WARIKOO",
-    "status": "unread",
-    "rating": 3,
-    "cover": "http://books.google.com/books/content?id=BH5BzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
-  },
-  {
     "id": "85323054-b9f8-450e-ba93-0a5c1bfffde1",
     "title": "అమ్మాయి తో స్నేహం",
     "author": "Revanth Kothapalli",
@@ -100,5 +84,20 @@
     "author": "Richard Edwin Sonntag",
     "status": "unread",
     "rating": 3
+  },
+  {
+    "id": "7d0899d3-a6e1-4428-8be6-f40b13942260",
+    "title": "Boo-Boo's New Leg",
+    "author": "Mary Garcia",
+    "status": "unread",
+    "rating": 3
+  },
+  {
+    "id": "d564e626-e75c-4048-8bdf-ff9138ef9e79",
+    "title": "The Jungle Book",
+    "author": "Rudyard Kipling",
+    "status": "unread",
+    "rating": 4,
+    "cover": "http://books.google.com/books/content?id=HvJaAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
   }
 ]
