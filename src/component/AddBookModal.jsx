@@ -39,6 +39,9 @@ function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
                 console.log("Before prevent default");
                 e.preventDefault();
                 console.log("After prevent default");
+                if(inputData.title.trim() === ""){
+                  console.log("oppsss blank name");
+                }
                 const bookDataResponse = await sendRequest(inputData);
                 console.log(bookDataResponse);
                 setIsOpen(false);

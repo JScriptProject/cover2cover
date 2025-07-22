@@ -5,7 +5,7 @@ import ModalDialog from "./ModalDialog";
 import {deleteBook} from '../http.js';
 import {Save} from "lucide-react";
 
-function BookControlButtons({book, handleEdit,isEditing, editingBook, handleSave}) {
+function BookControlButtons({book, handleEdit,isEditing, editingBook, handleSave, setRender}) {
 
   const [openModal, setOpenModal] = useState(false);
   const [bookDeleteInfo, setBookDeleteInfo] = useState({bookId:book.id,bookTitle:book.title,delStatus:true});
@@ -26,7 +26,7 @@ async function onClickDelete(){
   const deleteResponse = await deleteBook(bookDeleteInfo.bookId);
   setOpenModal(false);
   setBookDeleteInfo((prev)=>({...prev, delStatus:false}));
-  console.log(deleteResponse);
+  setRender((prev)=> !prev);
 }
 
 function onClickCancel(){

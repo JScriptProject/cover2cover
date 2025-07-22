@@ -24,19 +24,19 @@
     "cover": "http://books.google.com/books/content?id=BH5BzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
   },
   {
-    "id": "7c32e67d-629d-4181-9856-519b3184fdbe",
-    "title": "",
-    "author": "",
-    "status": "unread",
-    "rating": 0,
-    "cover": ""
-  },
-  {
     "id": "85323054-b9f8-450e-ba93-0a5c1bfffde1",
     "title": "అమ్మాయి తో స్నేహం",
     "author": "Revanth Kothapalli",
     "status": "unread",
     "rating": 3,
     "cover": "http://books.google.com/books/content?id=99BEDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "id": "9610b81c-dd7e-46f2-84fd-f05800d6e629",
+    "title": "The Art of Money Getting, Or Golden Rules for Making Mone",
+    "author": "P. T. Barnum",
+    "status": "read",
+    "rating": 2,
+    "cover": "http://books.google.com/books/content?id=iy9rtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
   }
 ]

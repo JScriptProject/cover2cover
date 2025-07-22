@@ -56,6 +56,7 @@ function BookViews({ booksData, setRender, error }) {
                     isEditing={isEditing}
                     editingBook={editingBook}
                     handleSave={handleSave}
+                    setRender={setRender}
                   />
 
                   <h2 className="w-[90%]">
