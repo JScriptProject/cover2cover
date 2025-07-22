@@ -38,5 +38,13 @@
     "status": "read",
     "rating": 2,
     "cover": "http://books.google.com/books/content?id=iy9rtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "id": "59f64e54-d33d-42c1-b779-1b36c9ed7d6d",
+    "title": "FDF Bulletin",
+    "author": "Unknown Author",
+    "status": "unread",
+    "rating": 0,
+    "cover": "http://books.google.com/books/content?id=8GwzAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
   }
 ]

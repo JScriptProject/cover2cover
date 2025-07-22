@@ -1,7 +1,7 @@
 import React,{useState, useRef, useEffect} from 'react';
     import {fetchBookData} from '../http.js';
 
-function BookNameInput({setInputData}) {
+function BookNameInput({setInputData, setIsEmptyBook}) {
     const [inputQuery, setInputQuery] = useState("");
     const [suggestions, setSuggestions] = useState([]);
     const [bookData, setBookData] = useState({});
@@ -33,8 +33,7 @@ function BookNameInput({setInputData}) {
   console.log(inputQuery);
 
     function handleSuggestionClick(title){
-        console.log("clicked");
-        console.log(title);
+        setIsEmptyBook(false)
         setInputQuery(title);
         handleCreateBook(title);
         

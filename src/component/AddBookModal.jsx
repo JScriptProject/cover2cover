@@ -13,6 +13,7 @@ function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
         rating: 0,
         cover: ""
     });
+    const [isEmptyBook, setIsEmptyBook] = useState(false);
 
     function handleInputChange(e){
         setInputData({...inputData, [e.target.name]: e.target.value});
@@ -26,6 +27,7 @@ function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
   return (
     <>
     <div className="add-book-main">
+      {isEmptyBook && <p className="emptybookName">Please Enter the book name..</p>}
         <div className="addBook-dialog">
           <button className="closeBtn-dialog" onClick={onCloseBtn}>
             <X />
@@ -40,14 +42,15 @@ function AddBookModal({onCloseBtn, setIsOpen, setRender}) {
                 e.preventDefault();
                 console.log("After prevent default");
                 if(inputData.title.trim() === ""){
-                  console.log("oppsss blank name");
+                  setIsEmptyBook(true);
+                  return;
                 }
                 const bookDataResponse = await sendRequest(inputData);
                 console.log(bookDataResponse);
                 setIsOpen(false);
                 setRender((prev)=> !prev);
             }}>
-              <BookNameInput setInputData={setInputData} />
+              <BookNameInput setInputData={setInputData} setIsEmptyBook={setIsEmptyBook} />
               
               <div className="input-block input-block-radio">
                 <div className="radio-group">

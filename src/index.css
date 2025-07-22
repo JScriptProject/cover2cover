@@ -197,6 +197,9 @@ h1 span::after{
  z-index: 1000;
 }
 
+.emptybookName{
+  @apply absolute top-[10%] bg-[red] px-5 py-1 font-semibold text-white;
+}
 .addBook-dialog{
   position: relative;
   z-index: 1001;
