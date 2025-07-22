@@ -1,72 +1,26 @@
 [
   {
-    "id": "dc60421c-9608-4d95-b5ed-ca741f636ec4",
-    "title": "I Like My Name",
-    "author": "Unknown Author",
-    "status": "unread",
-    "rating": 3,
-    "cover": "http://books.google.com/books/content?id=tCZoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-  },
-  {
-    "id": "3836125f-1e37-430a-b739-055ed7f7b52d",
-    "title": "Rahul Gandhi: The Untold Story",
-    "author": "Swatantra Bahadur",
-    "status": "unread",
-    "rating": 4,
-    "cover": "http://books.google.com/books/content?id=xc-5EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-  },
-  {
-    "id": "83e200ec-1d91-474e-bc35-339379c0117b",
-    "title": "My Journey in This World",
-    "author": "Zed Nzuzi Nsakala",
-    "status": "unread",
-    "rating": 3,
-    "cover": "http://books.google.com/books/content?id=Q4ojEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-  },
-  {
-    "id": "ff49df22-a47d-41e5-8c64-9113922f9ace",
-    "title": "A Journey to the Centre of the Earth (Esprios Classics)",
-    "author": "Jules Verne",
-    "status": "unread",
-    "rating": 3,
-    "cover": "http://books.google.com/books/content?id=AFDaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-  },
-  {
     "id": "eaf4af61-1d3a-48f8-b722-d05968a7021b",
     "title": "My Reminiscences",
     "author": "Rabindranath Tagore",
-    "status": "unread",
-    "rating": 2,
+    "status": "read",
+    "rating": 5,
     "cover": "http://books.google.com/books/content?id=r-XLEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
   },
   {
-    "id": "0485a0d6-c6e1-4a78-a814-2cfd1bb06da9",
-    "title": "The Mumbai Factfile",
-    "author": "Derek O'Brien",
-    "status": "read",
-    "rating": 2,
-    "cover": "http://books.google.com/books/content?id=1m9uAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    "id": "3dd0de7c-7e8f-408b-8f5e-831530120e5c",
+    "title": "DRDO CEPTAM 10 STA B Tier 1 Exam | Senior Technical Assistant 'Group B' | 1400+ Solved Questions (10 Mock Tests + 10 Sectional Tests)",
+    "author": "EduGorilla Prep Experts",
+    "status": "unread",
+    "rating": 3,
+    "cover": "http://books.google.com/books/content?id=kp-IEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
   },
   {
-    "id": "accf1757-634d-4d5a-9412-71e3168fab6c",
-    "title": "Introduction to Engineering Thermodynamics",
-    "author": "Richard Edwin Sonntag",
+    "id": "e4f74629-b179-4ee1-8484-98ab181a28bb",
+    "title": "The Magic of the Lost Story",
+    "author": "Sudha Murty",
     "status": "unread",
-    "rating": 3
-  },
-  {
-    "id": "7d0899d3-a6e1-4428-8be6-f40b13942260",
-    "title": "Boo-Boo's New Leg",
-    "author": "Mary Garcia",
-    "status": "unread",
-    "rating": 3
-  },
-  {
-    "id": "d564e626-e75c-4048-8bdf-ff9138ef9e79",
-    "title": "The Jungle Book",
-    "author": "Rudyard Kipling",
-    "status": "unread",
-    "rating": 4,
-    "cover": "http://books.google.com/books/content?id=HvJaAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    "rating": 3,
+    "cover": "http://books.google.com/books/content?id=eCyWEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
   }
 ]

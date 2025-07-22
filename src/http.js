@@ -1,5 +1,7 @@
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
+
 export async function sendRequest(data) {
-  const url = "http://localhost:3000/books";
+  const url = `${API_BASE_URL}/books`;
 
   const response = await fetch(url, {
     method: "POST",
@@ -42,7 +44,7 @@ export async function fetchBookData(query) {
 }
 
 export async function loadAllBooks() {
-  const url = "http://localhost:3000/books";
+  const url = `${API_BASE_URL}/books`;
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error("Failed to fetch books data. Restart Backend");
@@ -52,7 +54,7 @@ export async function loadAllBooks() {
 }
 
 export async function deleteBook(id) {
-  const url = `http://localhost:3000/books/${id}`;
+  const url = `${API_BASE_URL}/books/${id}`;
   try {
     const response = await fetch(url, {
       method: "DELETE",
@@ -70,7 +72,7 @@ export async function deleteBook(id) {
 
 
 export async function updateBook(id, data) {
-  const url = `http://localhost:3000/books/${id}`;
+  const url = `${API_BASE_URL}/books/${id}`;
   const response = await fetch(url, {
     method: "PUT",
     body: JSON.stringify(data),
